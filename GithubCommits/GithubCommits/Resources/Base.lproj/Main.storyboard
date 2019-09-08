@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-qp-21p">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-qp-21p">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.001531540183" green="0.40793213249999999" blue="0.21434447170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Github Commits" id="W9o-1K-QCE"/>
@@ -28,6 +27,11 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dPJ-qp-21p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0xW-S5-fqo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPJ-qp-21p" secondAttribute="trailing" id="Uqo-A1-52n"/>
+                            <constraint firstItem="dPJ-qp-21p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eid-ZL-FXP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
