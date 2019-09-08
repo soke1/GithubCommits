@@ -60,12 +60,33 @@ class QueryService {
                     let data = data,
                     let response = response as? HTTPURLResponse,
                     response.statusCode == 200 {
-                    print(data)
+                    
+                    self?.updateResults(data)
+                    
+                    // 6
+                    DispatchQueue.main.async {
+                        completion(self?.responses, self?.errorMessage ?? "")
+                    }
                 }
             }
             
             // 7
             dataTask?.resume()
+        }
+    }
+    //
+    // MARK: - Private Methods
+    //
+    private func updateResults(_ data: Data) {
+        responses.removeAll()
+        do {
+            let res = try JSONDecoder().decode([Response].self, from: data)
+            for commitdata in res {
+                responses.append(commitdata)
+            }
+            
+        } catch let error {
+            print(error)
         }
     }
 }
