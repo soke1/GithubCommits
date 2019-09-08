@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    internal func loadCommits() {
+        queryService.getResults(searchTerm: "") { [weak self] results, errorMessage in
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            DispatchQueue.main.async {
+                if let results = results {
+                    self?.respondResults = results
+                    self?.tableview.reloadData()
+                }
+            }
+        }
+    }
 }
 
