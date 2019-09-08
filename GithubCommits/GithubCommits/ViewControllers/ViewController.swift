@@ -9,13 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //
+    // MARK: - IBOutlets
+    //
     @IBOutlet weak var tableview: UITableView!
+    
+    //
+    // MARK: - Constants
+    //
+    let queryService = QueryService()
+    
+    //
+    // MARK: - Variables And Properties
+    //
+    var respondResults: [Response] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
 }
 
