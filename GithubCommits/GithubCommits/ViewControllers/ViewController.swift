@@ -12,7 +12,13 @@ class ViewController: UIViewController {
     //
     // MARK: - IBOutlets
     //
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var tableview: UITableView!{
+        didSet{
+            let refreshControl = UIRefreshControl()
+            refreshControl.addTarget(self, action: #selector(loadCommits), for: .valueChanged)
+            tableview.refreshControl = refreshControl
+        }
+    }
     
     //
     // MARK: - Constants
@@ -29,12 +35,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         loadCommits()
     }
-    internal func loadCommits() {
+    @objc internal func loadCommits() {
         queryService.getResults(searchTerm: "") { [weak self] results, errorMessage in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             DispatchQueue.main.async {
                 if let results = results {
                     self?.respondResults = results
+                    self?.tableview.refreshControl?.endRefreshing()
                     self?.tableview.reloadData()
                 }
             }
