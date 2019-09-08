@@ -76,6 +76,11 @@
                                                 <constraint firstItem="w4K-8z-djk" firstAttribute="top" secondItem="fTO-qb-dbQ" secondAttribute="bottom" constant="10" id="xM3-O4-wWf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorNameLbl" destination="fTO-qb-dbQ" id="G4b-P8-kFw"/>
+                                            <outlet property="messageLbl" destination="mPe-fR-rIy" id="vKg-BQ-nrc"/>
+                                            <outlet property="shaLbl" destination="fNY-Cq-ons" id="a5j-00-yq8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

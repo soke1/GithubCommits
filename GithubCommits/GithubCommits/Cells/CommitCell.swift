@@ -8,4 +8,7 @@
 
 import UIKit
 class CommitCell: UITableViewCell {
+    @IBOutlet weak var authorNameLbl: UILabel!
+    @IBOutlet weak var shaLbl: UILabel!
+    @IBOutlet weak var messageLbl: UILabel!
 }
