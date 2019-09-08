@@ -40,5 +40,30 @@ class ViewController: UIViewController {
         }
     }
 }
-
+//
+// MARK: - Table View Data Source
+//
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: CommitCell = tableView.dequeueReusableCell(withIdentifier: CommitCell.identifier,
+                                                             for: indexPath) as! CommitCell
+        
+        let response = respondResults[indexPath.row]
+        cell.setup(response: response)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return respondResults.count
+    }
+}
+//
+// MARK: - Table View Delegate
+//
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 115.0
+    }
+}
 
