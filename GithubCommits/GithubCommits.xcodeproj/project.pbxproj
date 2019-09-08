@@ -13,6 +13,7 @@
 		234C1EBB2325A07200A92283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234C1EBA2325A07200A92283 /* Assets.xcassets */; };
 		234C1EBE2325A07200A92283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234C1EBC2325A07200A92283 /* LaunchScreen.storyboard */; };
 		234C1EC92325A07200A92283 /* GithubCommitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1EC82325A07200A92283 /* GithubCommitsTests.swift */; };
+		234C1ED92325A6EB00A92283 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1ED82325A6EB00A92283 /* CommitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		234C1EC42325A07200A92283 /* GithubCommitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCommitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		234C1EC82325A07200A92283 /* GithubCommitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCommitsTests.swift; sourceTree = "<group>"; };
 		234C1ECA2325A07200A92283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234C1ED82325A6EB00A92283 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		234C1EB22325A07100A92283 /* GithubCommits */ = {
 			isa = PBXGroup;
 			children = (
+				234C1ED72325A6D800A92283 /* Cells */,
 				234C1EB32325A07100A92283 /* AppDelegate.swift */,
 				234C1ED52325A0FF00A92283 /* Models */,
 				234C1ED32325A0D600A92283 /* Resources */,
@@ -126,6 +129,14 @@
 				234C1EBF2325A07200A92283 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		234C1ED72325A6D800A92283 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				234C1ED82325A6EB00A92283 /* CommitCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			files = (
 				234C1EB62325A07100A92283 /* ViewController.swift in Sources */,
 				234C1EB42325A07100A92283 /* AppDelegate.swift in Sources */,
+				234C1ED92325A6EB00A92283 /* CommitCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
