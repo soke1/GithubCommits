@@ -8,4 +8,6 @@
 
 import Foundation
 struct Response: Codable { // or Decodable
+    let sha:String
+    let commit:Commit
 }
