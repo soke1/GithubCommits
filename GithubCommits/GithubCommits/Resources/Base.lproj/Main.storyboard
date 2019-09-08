@@ -36,35 +36,45 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTO-qb-dbQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTO-qb-dbQ">
                                                     <rect key="frame" x="15" y="15" width="379" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Commit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-8z-djk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-8z-djk">
                                                     <rect key="frame" x="15" y="46" width="65" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNY-Cq-ons">
-                                                    <rect key="frame" x="88" y="46" width="306" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNY-Cq-ons">
+                                                    <rect key="frame" x="88" y="46" width="29.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Commit Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-fR-rIy">
-                                                    <rect key="frame" x="15" y="75" width="379" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commit Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-fR-rIy">
+                                                    <rect key="frame" x="15" y="75" width="133.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fTO-qb-dbQ" firstAttribute="top" secondItem="9Iq-eQ-AM6" secondAttribute="top" constant="15" id="52c-nV-P9q"/>
+                                                <constraint firstItem="fTO-qb-dbQ" firstAttribute="leading" secondItem="9Iq-eQ-AM6" secondAttribute="leading" constant="15" id="Bhv-vP-Zda"/>
+                                                <constraint firstItem="w4K-8z-djk" firstAttribute="leading" secondItem="9Iq-eQ-AM6" secondAttribute="leading" constant="15" id="CGR-Wc-DzX"/>
+                                                <constraint firstItem="fNY-Cq-ons" firstAttribute="leading" secondItem="w4K-8z-djk" secondAttribute="trailing" constant="8" id="Dcv-Uh-taa"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fNY-Cq-ons" secondAttribute="trailing" constant="20" symbolic="YES" id="RsP-z4-lmV"/>
+                                                <constraint firstAttribute="bottom" secondItem="mPe-fR-rIy" secondAttribute="bottom" constant="17.5" id="bUO-qf-qfb"/>
+                                                <constraint firstItem="mPe-fR-rIy" firstAttribute="leading" secondItem="9Iq-eQ-AM6" secondAttribute="leading" constant="15" id="bYC-3r-o4x"/>
+                                                <constraint firstItem="fNY-Cq-ons" firstAttribute="top" secondItem="fTO-qb-dbQ" secondAttribute="bottom" constant="10" id="cvP-3h-FCV"/>
+                                                <constraint firstAttribute="trailing" secondItem="fTO-qb-dbQ" secondAttribute="trailing" constant="20" id="gmT-N2-WAh"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mPe-fR-rIy" secondAttribute="trailing" constant="20" symbolic="YES" id="nf2-n9-vK2"/>
+                                                <constraint firstItem="mPe-fR-rIy" firstAttribute="top" secondItem="w4K-8z-djk" secondAttribute="bottom" constant="8" id="v3g-oh-28x"/>
+                                                <constraint firstItem="w4K-8z-djk" firstAttribute="top" secondItem="fTO-qb-dbQ" secondAttribute="bottom" constant="10" id="xM3-O4-wWf"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
