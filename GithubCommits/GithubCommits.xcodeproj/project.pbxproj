@@ -15,6 +15,7 @@
 		234C1EC92325A07200A92283 /* GithubCommitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1EC82325A07200A92283 /* GithubCommitsTests.swift */; };
 		234C1ED92325A6EB00A92283 /* CommitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1ED82325A6EB00A92283 /* CommitCell.swift */; };
 		234C1EDB2325A8BF00A92283 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1EDA2325A8BF00A92283 /* Author.swift */; };
+		234C1EDD2325A97D00A92283 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C1EDC2325A97D00A92283 /* Commit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		234C1ECA2325A07200A92283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234C1ED82325A6EB00A92283 /* CommitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCell.swift; sourceTree = "<group>"; };
 		234C1EDA2325A8BF00A92283 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		234C1EDC2325A97D00A92283 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				234C1EDA2325A8BF00A92283 /* Author.swift */,
+				234C1EDC2325A97D00A92283 /* Commit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234C1EDD2325A97D00A92283 /* Commit.swift in Sources */,
 				234C1EDB2325A8BF00A92283 /* Author.swift in Sources */,
 				234C1EB62325A07100A92283 /* ViewController.swift in Sources */,
 				234C1EB42325A07100A92283 /* AppDelegate.swift in Sources */,
