@@ -78,11 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				234C1EB32325A07100A92283 /* AppDelegate.swift */,
-				234C1EB52325A07100A92283 /* ViewController.swift */,
-				234C1EB72325A07100A92283 /* Main.storyboard */,
-				234C1EBA2325A07200A92283 /* Assets.xcassets */,
-				234C1EBC2325A07200A92283 /* LaunchScreen.storyboard */,
-				234C1EBF2325A07200A92283 /* Info.plist */,
+				234C1ED52325A0FF00A92283 /* Models */,
+				234C1ED32325A0D600A92283 /* Resources */,
+				234C1ED62325A10800A92283 /* Supporting Files */,
+				234C1ED42325A0EA00A92283 /* ViewControllers */,
 			);
 			path = GithubCommits;
 			sourceTree = "<group>";
@@ -94,6 +93,39 @@
 				234C1ECA2325A07200A92283 /* Info.plist */,
 			);
 			path = GithubCommitsTests;
+			sourceTree = "<group>";
+		};
+		234C1ED32325A0D600A92283 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				234C1EB72325A07100A92283 /* Main.storyboard */,
+				234C1EBA2325A07200A92283 /* Assets.xcassets */,
+				234C1EBC2325A07200A92283 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		234C1ED42325A0EA00A92283 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				234C1EB52325A07100A92283 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		234C1ED52325A0FF00A92283 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		234C1ED62325A10800A92283 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				234C1EBF2325A07200A92283 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
