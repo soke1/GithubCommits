@@ -8,4 +8,6 @@
 
 import Foundation
 struct Commit: Codable { // or Decodable
+    let message:String
+    let author:Author
 }
