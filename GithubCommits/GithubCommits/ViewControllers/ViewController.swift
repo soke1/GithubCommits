@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        loadCommits()
     }
     internal func loadCommits() {
         queryService.getResults(searchTerm: "") { [weak self] results, errorMessage in
