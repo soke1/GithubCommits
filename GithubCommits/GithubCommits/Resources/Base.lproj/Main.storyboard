@@ -25,11 +25,19 @@
                                     <navigationItem title="Github Commits" id="W9o-1K-QCE"/>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDp-wP-iUl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dPJ-qp-21p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0xW-S5-fqo"/>
+                            <constraint firstItem="JDp-wP-iUl" firstAttribute="top" secondItem="dPJ-qp-21p" secondAttribute="bottom" id="RiQ-um-eDp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPJ-qp-21p" secondAttribute="trailing" id="Uqo-A1-52n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JDp-wP-iUl" secondAttribute="bottom" id="Wj6-bz-FpP"/>
+                            <constraint firstItem="JDp-wP-iUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aJi-XV-rh7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDp-wP-iUl" secondAttribute="trailing" id="blf-Ob-Po1"/>
                             <constraint firstItem="dPJ-qp-21p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eid-ZL-FXP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
